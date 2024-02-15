@@ -18,10 +18,10 @@ const FeaturedNewsCard = ({ title, description, url, imageUrl, publishedAt }) =>
             {title}
           </h3>
         </a>
-        <p className="text-base text-[#292219] dark:text-gray-400">
+        <p className="text-base text-[#292219] dark:text-[#94A3B8]">
           {description}
-        </p>
-        <p className="mt-5 text-base text-[#5C5955]">{getTimeFormate(publishedAt)}</p>
+        </p> 
+        <p className="mt-5 text-base text-[#5C5955] dark:text-gray-400">{getTimeFormate(publishedAt)}</p>
       </div>
 
       <div className="col-span-12 md:col-span-6">

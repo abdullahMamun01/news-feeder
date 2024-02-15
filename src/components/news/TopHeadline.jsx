@@ -16,7 +16,7 @@ const TopHeadline = ({ title, description, publishedAt, imageUrl, author, url })
                         {title}
                     </h3>
                 </a>
-                <p className="text-base text-[#5C5955] dark:text-gray-400">
+                <p className="text-base text-[#5C5955] dark:text-[#94A3B8]">
                     {description}
                 </p>
                 <p className="mt-5 text-base text-[#5C5955] dark:text-gray-400">{getTimeFormate(publishedAt)}</p>

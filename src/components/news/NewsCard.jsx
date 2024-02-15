@@ -16,10 +16,10 @@ const NewsCard = ({ title, imageUrl, description, publishedAt, url }) => {
                         {title}
                     </h3>
                 </a>
-                <p className="text-base text-[#292219] dark:text-gray-400">
+                <p className="text-base text-[#292219] dark:text-[#94A3B8]">
                     {description?.slice(0, 150)}
                 </p>
-                <p className="mt-5 text-base text-[#94908C]">
+                <p className="mt-5 text-base text-[#94908C] dark:text-gray-400">
                     {getTimeFormate(publishedAt)}
                 </p>
             </div>

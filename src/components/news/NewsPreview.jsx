@@ -19,10 +19,10 @@ const NewsPreview = ({ title, content, publishedAt, imageUrl, url }) => {
                         {title}
                     </h3>
                 </a>
-                <p className="text-base text-[#292219] dark:text-[#B7B5B5]">
+                <p className="text-base text-[#292219] dark:text-[#94A3B8]">
                     {content?.slice(0, 150)}
                 </p>
-                <p className="mt-5 text-base  text-[#94908C]  ">
+                <p className="mt-5 text-base  text-[#94908C] dark:text-gray-400 ">
                     {getTimeFormate(publishedAt)}
                 </p>
             </div>
