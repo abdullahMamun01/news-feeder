@@ -5,9 +5,11 @@ import { SearchContext } from "../contexts"
 
 const SearchBox = () => {
     const {setSearchNews} = useContext(SearchContext)
+
     const debounceCb = useDebounce((searchTerm) => {
         setSearchNews(searchTerm)
     } , 500 )
+    
     const handleSearch = (e) => {
         const value  = e.target.value
         debounceCb(value)
@@ -22,7 +24,7 @@ const SearchBox = () => {
                     </svg>
                 </div>
                 <input type="search"
-                    className="block w-full p-4 ps-10 text-sm text-gray-900 dark:text-gray-700 border border-gray-300 rounded-lg bg-gray-50 focus:ring-[#00d991] focus:border-[#00d991]  focus:outline-none  dark:text-white dark:focus:ring-[#00d991] dark:focus:border-[#00d991]"
+                    className="block w-full p-4 ps-10 text-sm text-gray-900  border border-gray-300 rounded-lg bg-gray-50 focus:ring-[#00d991] focus:border-[#00d991]  focus:outline-none  dark:text-gray-700 dark:focus:ring-[#00d991] dark:focus:border-[#00d991] "
                     placeholder="Search News..."
                     onChange={handleSearch}
                     required
